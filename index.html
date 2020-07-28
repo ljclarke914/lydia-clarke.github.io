@@ -1,140 +1,111 @@
 <!DOCTYPE html>
-<html>
- 
-  <style>
-     .full-width{
-      position: relative;
-      width: 100%
-    }
-   .site-width-limit{
-    width: 1080px;
-    margin: 0 auto;
-   }
-   .col-wrapper{display: block}
-   .col{
-    box-sizing: border-box;
-    display: inline-block;
-    margin-right: 3%;
-    vertical-align: top;
-    width: 100%;
-    color:#000000;
-    font-family: Segoe UI;
-    line-height: 30px;
-    padding: 30px 0;
-   }
-   .col.col-1-2{width: 48.31%}
-   .col-wrapper .col: last-child {margin-right:0}
-   @media screen and (max-width:1160px){
-    .site-width{
-     background: red;
-     margin: 0 5%;
-     width: 90%;
-    }
-   }
-    h1.a{
-      position: absolute;
-      top: 550px;
-      left: 203px;
-      width: 535px;
-      height: 70px;
-     text-align:left;
-      font: bold 58px/72px Segoe UI;
-      color: #63728F;
-    }
-     p.a{
-    position: absolute;
-      top: 700px;
-    left: 180px;
-    width: 725px;
-    height: 70px;
-       text-align: left;
-    font: bold 25px Segoe UI; 
-    color: #63728F;
-}
-    p.solid{
-      position:absolute;
-      border-style:solid;
-      top: 80px;
-      left: 300px;
-      width: 330px;
-      height: 427px;
-      border: 10px solid #63728F;
-      border-radius: 1000px;
-      opacity: 1;
-    }
-    img{
-      position: absolute;
-      opacity: 1;
-      width: 290px;
-      height: 387px; 
-      top: 130px; 
-      left: 330px;
-      border-radius: 1000px;
-    }
-    .button{
-     position: relative;
-      color: #FFFFFF;
-      top: 700px;
-      left:100px;
-      width: 150px;
-      height: 55px;
-      margin-right: 50px;
-      background: #63728F 0% 0% no-repeat padding-box;
-      display: inline-block;
-      text-align: center;
-      font-size: 16px;
-      border: 8px solid #63728F;
-      transition: all 0.5s;
-      cursor: pointer;
-    }
-    .button1 {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-    .button span{
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-    .button span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-    .button:hover span{
-      padding-right: 25px;
-    }
-    .button:hover span:after{
-      opacity:1;
-      right:0;
-    }
-    </style>
-  
-<body>
-  <div class="full-width half-background" style="background-image:linear-gradient(to left, transparent 50%, #000000 50%), url("code.png");
-       width 100%;display:table;">
-   <div class="site-width-limit">
-    <div class="col-wrapper">
-     <div class = "col col-1-2">
+	<html>
+	 
+	  <style>
+	        body,html{
+	          height: 100%;
+	          margin: 0;
+	}
+	    
+	   .bg{
+	     background-image: url("code.png");
+	          height: 100%;
+	          width: 50%;
+	          background-position: left;
+	          baackground-repeat: no-repeat;
+	          background-size:cover;
+	    }
+	    h1.a{
+	      position: absolute;
+	      top: 550px;
+	      left: 203px;
+	      width: 535px;
+	      height: 70px;
+	     text-align:left;
+	      font: bold 58px/72px Segoe UI;
+	      color: #63728F;
+	    }
+	     p.a{
+	    position: absolute;
+	      top: 700px;
+	    left: 180px;
+	    width: 725px;
+	    height: 70px;
+	       text-align: left;
+	    font: bold 25px Segoe UI; 
+	    color: #63728F;
+	}
+	    p.solid{
+	      position:absolute;
+	      border-style:solid;
+	      top: 80px;
+	      left: 300px;
+	      width: 330px;
+	      height: 427px;
+	      border: 10px solid #63728F;
+	      border-radius: 1000px;
+	      opacity: 1;
+	    }
+	    img{
+	      position: absolute;
+	      opacity: 1;
+	      width: 290px;
+	      height: 387px; 
+	      top: 130px; 
+	      left: 330px;
+	      border-radius: 1000px;
+	    }
+	    .button{
+	      color: #FFFFFF;
+	      top: 700px;
+	      left:100px;
+	      width: 150px;
+	      height: 55px;
+	      margin-right: 50px;
+	      background: #63728F 0% 0% no-repeat padding-box;
+	      display: inline-block;
+	      text-align: center;
+	      font-size: 16px;
+	      border: 8px solid #63728F;
+	      transition: all 0.5s;
+	      cursor: pointer;
+	    }
+	    .button1 {
+	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	    }
+	    .button span{
+	      cursor: pointer;
+	      display: inline-block;
+	      position: relative;
+	      transition: 0.5s;
+	    }
+	    .button span:after {
+	      content: '\00bb';
+	      position: absolute;
+	      opacity: 0;
+	      top: 0;
+	      right: -20px;
+	      transition: 0.5s;
+	    }
+	    .button:hover span{
+	      padding-right: 25px;
+	    }
+	    .button:hover span:after{
+	      opacity:1;
+	      right:0;
+	    }
+	    </style>
+	  
+	<body>
+	  <div class="bg"></div>
+	<h1 class = "a">Hi,I'm Lydia Clarke</h1>
+	<p class = "a">I am a Computer Science and Mathematics student at McMurry University. I am passionate about coding, and aspire to work as a Front End Developer following my graduation in May 2021.</p>
+	  <img src = "IMG_9579.JPEG" alt = "profile picture" >
+	  <p class = "solid"></p>
+	  <button class = "button button1"><span>About Me</span></button>
+	  <button class = "button button1"><span>Projects</span></button>
+	  <button class = "button button1", onclick = "document.location = 'Lydia-Clarke.pdf'"><span>Resume</span></button>
+	  <button class = "button button1"><span>Contact Me</span></button>
+	</body>
+	</html>
 
-      <button class = "button button1"><span>About Me</span></button>
-  <button class = "button button1"><span>Projects</span></button>
-  <button class = "button button1", onclick = "document.location = 'Lydia-Clarke.pdf'"><span>Resume</span></button>
-  <button class = "button button1"><span>Contact Me</span></button>
-  <img src = "IMG_9579.JPEG" alt = "profile picture" >
-  <p class = "solid"></p>
-      <h1 class = "a">Hi,Im Lydia Clarke</h1>
-<p class = "a">I am a Computer Science and Mathematics student at McMurry University. I am passionate about coding, and aspire to work as a Front End Developer following my graduation in May 2021.</p>
-
-     </div>
-     <div class = "col col-1-2">
-     </div>
-    </div>
-   </div>
- </div>
- 
-</body>
-</html>

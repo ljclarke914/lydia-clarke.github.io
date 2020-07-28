@@ -36,7 +36,7 @@
       border-radius: 70px;
     }
     .button{
-      position: relative;
+      
       color: #FFFFFF;
       top: 700px;
       left:100px;
@@ -64,9 +64,12 @@
       content: '\00bb';
       position: absolute;
       opacity: 0;
-      top: 700px;
-      left: 100px;
+      top: 0;
+      right: -20px;
       transition: 0.5s;
+    }
+    .button:hover span{
+      padding-right: 25px;
     }
     .button:hover span:after{
       opacity:1;
@@ -75,7 +78,7 @@
     </style>
   
 <body>
-<h1 class = "a">Hi,I'm Lydia Clarke</h1>
+<h1 class = "a">Hi, I'm Lydia Clarke</h1>
 <p class = "a">I am a Computer Science and Mathematics student at McMurry University. I am passionate about coding, and aspire to work as a Front End Developer following my graduation in May 2021.</p>
   <img src = "librarypic.jpg" alt = "profile picture" width = "400" height = "450">
   <button class = "button button1">About Me</button>

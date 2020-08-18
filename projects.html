@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lydia Clarke Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+ background-color: rgba(255, 255, 255, 0.8);
+	grid-gap:10px;
+  padding: 20px;
+  text-align: center;
+	
+}
+		    img{
+	max-width:100%;
+	 width: 290px;
+	 height: 387px; 
+	  border-radius: 1000px;
+	    }
+.item1{
+	grid-area: 1/1/2/2;
+	}
+.item2{
+	grid-area:1/2/3/3;
+	}
+.item4{
+	grid-area: 2/1/3/2;
+	}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#">About</a>
+  <a href="#">Projects</a>
+  <a href="Lydia Clarke Resume.pdf">Resume</a>
+	<a href="#">Contact me</a>
+	<a href="https://www.linkedin.com/in/lydia-clarke-bb1513195/">LinkedIn</a>
+	<a href="https://github.com/ljclarke914">GitHub</a>
+</div>
+
+<div class="content">
+  <div class="grid-container">
+  <div class="item1" style="font-size:4vw;">Hi, I'm Lydia Clarke</div>
+  <div class="item2"><img src = "IMG_9579.JPEG" alt = "profile picture" ></div>
+  <div class="item3"></div>  
+  <div class="item4" style="font-size:2vw;">I am a student at McMurry University double majoring <br> in Mathematics and Computer Science.
+	   I aspire to work <br> in front-end or back-end devlopment following my graduation <br> in May 2021.</div>
+  <div class="item5"></div>
+  <div class="item6"></div>  
+  <div class="item7"></div>
+  <div class="item8"></div>
+  <div class="item9"></div>  
+</div>
+</div>
+
+</body>
+</html>

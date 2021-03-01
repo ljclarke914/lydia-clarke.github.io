@@ -4,113 +4,240 @@
 <title>Lydia Clarke Portfolio</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-background-color: #7968F7;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the side navigation */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-}
 
 
-/* Side navigation links */
-.sidenav a {
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
-}
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-/* Change color on hover */
-.sidenav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the content */
-.content {
-  margin-left: 200px;
-  padding-left: 20px;
-	color: white;
-}
-.grid-container{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-
-.grid-item {
- background-color: rgba(255, 255, 255, 0.8);
-	grid-gap:10px;
-  padding: 20px;
-  text-align: center;
-	
-}
-		    img{
-	max-width:100%;
-	 width: 290px;
-	 height: 387px; 
-	  border-radius: 1000px;
-	border: 5px solid white;
-	    }
-.item1{
-	grid-area: 1/1/2/2;
-	}
-.item3{
-	grid-area:1/3/3/4;
-	}
-.item4{
-	grid-area: 2/1/3/2;
-	}
-</style>
 </head>
+
 <body>
 
-<div class="sidenav">
-  <a href="index.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="Lydia Clarke Resume.pdf">Resume</a>
-	<a href="https://www.linkedin.com/in/lydia-clarke-bb1513195/">LinkedIn</a>
-	<a href="https://github.com/ljclarke914">GitHub</a>
-</div>
+	<header>
 
-<div class="content">
-  <div class="grid-container">
-  <div class="item1" style="font-size:4vw;"><br>Hi, I'm Lydia Clarke</div>
-  <div class="item2"></div>
-  <div class="item3"><br><img src = "IMG_9579.JPEG" alt = "profile picture" ></div>  
-  <div class="item4" style="font-size:1.5vw;">I am a student at McMurry University double majoring in Mathematics and Computer Science.
-	   I aspire to workin front-end or back-end devlopment following my graduation <br> in May 2021. <br>While earning credits towards a mathematics degree 
-	  during my Fall 2018 semester, I was required to take an intro to programming class. I loved programming so much I added Computer Science as a second major! 
-	  Since I am still a student, I’ve been exploring the many career choices I could pursue once I graduate. During my recent summer 2020 User Experience Design internship,
-	  I had the opportunity to be introduced to different roles firsthand. Since then, my interests have been shifting towards front-end and back-end development. <br> 
-	I am a quick learner and outstanding student driven by my desire to learn new things. I also work as a student tutor in mathematics and computer science at McMurry University, 
-	  which further reflects my ability to work with others, and my ability to identify the best ways to help students be successful. Lastly, I am a team player, 
-	  having been team captain in collegiate athletics and currently the president of the McMurry Mathematics club. I hope that someday through past and future 
-	  experiences I can be a role model for women in the technology field.
-</div>
-  <div class="item5"></div>
-  <div class="item6"></div>  
-  <div class="item7"></div>
-  <div class="item8"></div>
-  <div class="item9"></div>  
-</div>
-</div>
+		<br> <br> <br> <br> <br>
+
+		<div class="centered">
+			<div class="neontext">
+				<br>Hi, I'm Lydia Clarke
+			</div>
+		</div>
+		<div class="centered">
+			<div class="neontext">
+				<a href="#projects"><br> <br> <br> <br> <br>
+					<br> <br> <i class="fa fa-code"><br>
+					<p>Projects</p></i></a> <a href="documents/LydiaClarkeResume.pdf" target="_blank"><i
+					class="fa fa-file"><br>
+					<p>Resume</p></i></a> <a
+					href="https://www.linkedin.com/in/lydia-clarke-bb1513195/"
+					target="_blank"><i class="fa fa-linkedin-square"><br>
+					<p>Linkedin</p></i></a> <a href="https://github.com/ljclarke914"
+					target="_blank"><i class="fa fa-github"><br>
+					<p>Github</p></i></a> <a href="#gallery"><i class="fa fa-camera"><br>
+					<p>Gallery</p></i></a>
+			</div>
+		</div>
+
+		<svg>
+<defs>
+  
+   <filter id="stroke">
+     <feMorphology operator="dilate" radius="1" in="SourceGraphic"
+				result="outside" />
+     <feMorphology operator="dilate" radius="2" in="outside"
+				result="thickened" />
+     <feComposite operator="out" in2="SourceGraphic" in="thickened"
+				result="stroke" />
+     
+  </filter>
+  
+  <filter id="inner-glow">
+    <feFlood flood-color="#e10b8d" />
+    <feComposite in2="SourceAlpha" operator="out" />
+    <feGaussianBlur stdDeviation="0.5" result="blur" />
+    <feComposite operator="atop" in2="SourceGraphic" />
+    
+</filter>
+  
+  <filter id="outer-glow">
+		<!-- Thicken out the original shape -->
+		<feMorphology operator="dilate" radius="2" in="SourceAlpha"
+				result="thicken" />
+
+		<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+		<feGaussianBlur in="thicken" stdDeviation="5" result="blurred" />
+
+		<!-- Change the colour -->
+		<feFlood flood-color="#db0273" result="glowColor" />
+
+		<!-- Color in the glows -->
+		<feComposite in="glowColor" in2="blurred" operator="in"
+				result="softGlow_colored" />
+
+		<!--	Layer the effects together -->
+		<feMerge>
+			<feMergeNode in="softGlow_colored" />
+			<feMergeNode in="SourceGraphic" />
+		</feMerge>
+
+	</filter>
+  
+  <filter id="outer-glow1">
+		<!-- Thicken out the original shape -->
+		<feMorphology operator="dilate" radius="20" in="SourceAlpha"
+				result="thicken" />
+
+		<!-- Use a gaussian blur to create the soft blurriness of the glow -->
+		<feGaussianBlur in="thicken" stdDeviation="25" result="blurred" />
+
+		<!-- Change the colour -->
+		<feFlood flood-color="#530139" result="glowColor" />
+
+		<!-- Color in the glows -->
+		<feComposite in="glowColor" in2="blurred" operator="in"
+				result="softGlow_colored" />
+
+		<!--	Layer the effects together -->
+		<feMerge>
+			<feMergeNode in="softGlow_colored" />
+			<feMergeNode in="SourceGraphic" />
+		</feMerge>
+
+	</filter>
+  </defs>
+  
+  
+</svg>
+
+	</header>
+	<nav></nav>
+	<main>
+		<p
+			style="text-align: center; margin-left: auto; margin-right: auto; width: 55em;">
+			<br> Nice to meet you! My name is Lydia Clarke, and I am a
+			Mathematics and Computer Science double major at McMurry University
+			graduating May 2021. I enjoy math and programming so much I just
+			couldn't decide which one I liked more so I chose both to specilaize
+			in! <br>
+			<br> Since my graduation is very close, I am looking for a new
+			place to work at and to call home. I am exploring data science and
+			front-end development as potential careers. My variety of skills
+			include programming in C, Java, CSS, PHP, Python, MySQL and HTML. I
+			also have some experience in User Experience design following my UX
+			Design internship with IBM this past summer. <br>
+			<br> I am a quick learner and outstanding student driven by my
+			desire to learn new things. I also work as a student tutor in
+			mathematics and computer science for the McMurry University TRIO
+			Support Services and the Academic Enrichment Center. My 3+ years
+			experience working as a student tutor shows that I can fully
+			understand and grasp concepts not only to do well in my classes but
+			to teach it to my peers. It also further reflects my ability to work
+			with others, and my ability to identify the best ways to help
+			students be successful. Lastly, I am a team player, having been team
+			captain in collegiate athletics and currently the president of the
+			McMurry Mathematics club. I hope that someday through past and future
+			experiences I can be a role model for women in the technology field.
+		</p>
+
+	</main>
+
+	<div class="middle">
+		<a id="projects"></a>
+
+		<div class="neon">
+			<div class="sign">Projects</div>
+		</div>
+	</div>
+	<div class="projects">
+
+
+		<div class="neonbtn">
+			<div class="button">
+				<a href="documents/incubatoroverview.pdf" target="_blank"> <span></span> <span></span>
+					<span></span> <span></span> IBM UX Design Incubator Project
+
+				</a>
+			</div>
+		</div>
+
+		<div class="neonbtn">
+			<div class="button">
+				<a href="documents/thesisoutline.pdf" target="_blank"> <span></span> <span></span>
+					<span></span> <span></span> Senior Thesis
+
+				</a>
+			</div>
+		</div>
+		<div class="neonbtn">
+			<div class="button">
+				<a href="documents/guioverview.pdf" target="_blank"> <span></span> <span></span>
+					<span></span> <span></span> Java GUI
+
+				</a>
+			</div>
+		</div>
+		<div class="neonbtn">
+			<div class="button">
+				<a href="documents/CourseProject.pdf" target="_blank"> <span></span> <span></span>
+					<span></span> <span></span> Capstone Project
+				</a>
+			</div>
+		</div>
+		<div class="neonbtn">
+			<div class="button">
+				<a href="documents/designchallenge.pdf" target="_blank"> <span></span> <span></span>
+					<span></span> <span></span> IBM UX Design Challenge
+
+				</a>
+			</div>
+		</div>
+		<div class="neonbtn">
+			<div class="button">
+				<a href="documents/PortfolioWebsite.pdf" target="_blank"> <span></span> <span></span>
+					<span></span> <span></span> Website Portfolio
+
+				</a>
+			</div>
+		</div>
+
+
+	</div>
+
+	<footer>
+		<a id="gallery"></a>
+		<div class="logo">
+			<b>G<span class="nnspan">al</span>le<span class="nnspan">r</span>y
+			</b>
+		</div>
+
+
+
+		<div class="plbody">
+
+			<ul class="plul">
+				<li class="plli"><img src="images/awardpic.JPEG" alt="math award"
+					height="370" width="270"></li>
+				<li class="plli"><img src="images/hatpic.jpg" alt="picture of me"
+					height="370" width="270" /></li>
+				<li class="plli"><img src="images/ibm2.jpg"
+					alt="ibm picture challenge" height="370" width="270" /></li>
+				<li class="plli"><img src="images/librarypic.jpg"
+					alt="me in the library" height="370" width="270" /></li>
+				<li class="plli"><img src="images/softball.jpg" alt="me pitching"
+					height="370" width="270" /></li>
+
+
+			</ul>
+
+		</div>
+
+	</footer>
+
+
+
 
 </body>
 </html>
